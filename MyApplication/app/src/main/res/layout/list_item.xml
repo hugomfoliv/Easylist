@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="65dp"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_centerHorizontal="true"
+    android:elevation="24dp"
+    android:layout_marginBottom="30dp">
+
+    <!-- Name Label -->
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="false"
+        android:textColor="#ff020202" />
+
+    <TextView
+        android:id="@+id/quantidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff000000"
+        android:layout_gravity="center_horizontal"
+        android:textSize="16dp"
+        android:layout_alignBottom="@+id/name"
+        android:layout_marginStart="100dp" />
+
+    <!-- Email label -->
+    <TextView
+        android:id="@+id/preco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:textColor="#ff000000"
+        android:layout_below="@+id/name"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

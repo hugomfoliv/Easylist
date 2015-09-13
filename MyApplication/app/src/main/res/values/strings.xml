@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Easylist</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="botao1">Lista necessários</string>
+    <string name="botao2">Nova Lista Compras</string>
+    <string name="botao3">Stock</string>
+    <string name="botao4">Validades</string>
+    <string name="title_activity_necessarios">Lista Necessários</string>
+    <string name="title_activity_create_list">Falar</string>
+    <string name="falar">Carregue para falar</string>
+    <string name="title_activity_nova_lista">Criar Nova Lista</string>
+    <string name="expirado">Expirado</string>
+    <string name="quaseexpirado">Prestes a expirar</string>
+    <string name="title_activity_stock">Stock</string>
+    <string name="title_activity_cenas">cenas</string>
+
+
+
+
+
+    <string name="nav_item_home">Home</string>
+    <string name="nav_item_friends">Friends</string>
+    <string name="nav_item_notifications">Messages</string>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_friends</item>
+        <item>@string/nav_item_notifications</item>
+    </string-array>
+
+    <string name="title_messages">Messages</string>
+    <string name="title_friends">Friends</string>
+    <string name="title_home">Home</string>
+</resources>
