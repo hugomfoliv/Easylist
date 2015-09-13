@@ -29,7 +29,7 @@
         android:layout_gravity="center_horizontal"
         android:textSize="16dp"
         android:layout_alignBottom="@+id/name"
-        android:layout_marginStart="100dp" />
+        android:layout_marginStart="150dp" />
 
     <!-- Email label -->
     <TextView

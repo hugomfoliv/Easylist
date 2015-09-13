@@ -131,6 +131,7 @@ Log.d("nomefor",nome);
                             float p = Float.parseFloat(preco1);
                             int quantidade = Integer.parseInt(quant);
                             total += quantidade * p;
+
                             listaprodutos.add(produto);
 
 
@@ -170,18 +171,20 @@ Log.d("nomefor",nome);
 
                     HashMap<String, String> produto = new HashMap<String, String>();
 
-
                     int quantidades[] = new int[100];
+
 
                     for (int j = 0; j < items.size(); j++) {
                         if (items.get(j).equals(nome)) {
                             quant = getIntent().getExtras().getString("quant");
+
+                            quantidades[j] = Integer.parseInt(quant);
                             produto.put("nome", nome);
                             produto.put("preco", preco+"€");
-                            produto.put("quant", quant+" unidades");
+                            produto.put("quant", quantidades[j]+" unidades");
                             float p = Float.parseFloat(preco);
-                            int quantidade = Integer.parseInt(quant);
-                            total += quantidade * p;
+                            //int quantidade = Integer.parseInt(quant);
+                            total += quantidades[j] * p;
 
                             listaprodutos.add(produto);
 
@@ -208,7 +211,7 @@ Log.d("nomefor",nome);
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
 
-
+            total = (float) (Math.floor(total*100)/100);
             ListAdapter adapter = new SimpleAdapter(NovaLista.this, listaprodutos, R.layout.list_item, new String[] { "nome", "preco", "quant" }, new int[] { R.id.name, R.id.preco, R.id.quantidade });
 
             list.setAdapter(adapter);
